@@ -1,0 +1,50 @@
+body{
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.btn{
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover{
+    background-color: rgba(51, 51, 51, 0.2);
+}
+
+.title{
+    font-size: 3em;
+    text-align: center;
+}
+
+.description{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+form{
+    text-align: center;
+}
+
+.link{ 
+    margin-top: 1rem;
+    margin-left: 5rem;
+}

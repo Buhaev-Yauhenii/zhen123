@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{%block script%}
+<link rel="stylesheet" type="text/css" href="{% static 'task/styles.css'%}">
+<script src="{% static 'task/script.js' %}"></script>
+{%endblock script%}
+
+
+{% block content %}
+    <h2 class="title">Simple Form</h2>
+    <p class="description">With dynamic inputs</p>
+    <form id="form" method="post" action="{%url 'form'%}">
+        <button class="btn" type="button" onclick="add_input()">add input</button>
+        <button class="btn" type="submit">submit inputs</button>
+        {% csrf_token %}
+        <div class="test">{{form.as_p}}</div>
+ 
+        
+    </form>
+    <a class="btn link"href="{%url 'view_data'%}"> list of results</a>
+{% endblock  %}
